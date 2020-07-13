@@ -187,15 +187,17 @@ main::-webkit-scrollbar{
     left:5%;
 }
 #detail #d_main #d_content #comment{
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    font-size: 25px;
     height:115px;
     color:rgb(50,50,50);
     position: relative;
     left:5%;
     width:85%;
     line-height: 100%;
+}
+#detail #d_main #d_content #comment>*{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    font-size: 25px;
 }
 #detail #d_main #d_content #comment::-webkit-scrollbar{
     display: none;
