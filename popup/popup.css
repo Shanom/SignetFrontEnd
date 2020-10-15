@@ -16,7 +16,8 @@ header{
     width:100%;
     height:10%;
     position: fixed;
-    background-color: #0076ba;
+    background-color: rgb(46,162,230);
+    
     box-shadow: 0px 1px 10px;
 }
 header img{
@@ -26,12 +27,11 @@ header img{
 header h1{
     font-family: 'Calistoga', cursive;
     position: relative;
-    left:50%;
-    transform: translateX(-50%);
+    left:2%;
     margin:0;
     color:white;
-    margin:1%
-    
+    margin:1%;
+
 }
 header a{
     width:auto;
@@ -42,7 +42,6 @@ header a{
     transform: translateX(-100%) translateY(-50%);
 }
 header *{
-    text-align: center;
     float: left;
 }
 footer{
@@ -53,6 +52,7 @@ footer{
 footer #saveButton img{
     width: 15%;
     transform: translateY(5%) translateX(10%);
+    border-radius: 10%;
 }
 wrap{
     transition-duration: 1s;
@@ -82,6 +82,10 @@ main::-webkit-scrollbar{
     list-style: none;
     height:100%;
     width:100%;
+    overflow-y:scroll;
+}
+#main::-webkit-scrollbar{
+    display:none;
 }
 #main .item{
     box-sizing: border-box;
@@ -100,8 +104,8 @@ main::-webkit-scrollbar{
     border-radius: 20%;
 }
 #main div img:first-child{
-    height:70%;
-    left:1%;
+    height:40%;
+    left:3%;
 }
 #main div img:nth-last-child(2){
     cursor: pointer;
@@ -180,11 +184,16 @@ main::-webkit-scrollbar{
     top:50%;
     transform: translateY(-50%);
     position: absolute;
+    width: 75%;
+    overflow: hidden;
+    height: 60%;
 }
+
 #detail #d_main #d_content{
     font-size:170%;
     position: relative;
     left:5%;
+    width:95%;
 }
 #detail #d_main #d_content #comment{
     height:115px;
@@ -204,17 +213,17 @@ main::-webkit-scrollbar{
 }
 #detail #d_main #date{
     position: relative;
-    left:80%;
+    left:71%;
     font-size:150%;
+    width:28%;
 }
 #active{
     transform: translateX(-100%);
 }
 #editbutton{
-    width: 10%;
+    height:35px ;
     position: relative;
     display: block;
-    top: 5px;
     border-radius: 15%;
 }
 #editbutton:hover{
@@ -223,4 +232,11 @@ main::-webkit-scrollbar{
 #buttons{
     position: relative;
     left:5%;
+    width:0
+}
+#inputSearch{
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
 }
